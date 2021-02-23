@@ -1,0 +1,616 @@
+/*====================================================================
+commen css
+=====================================================================*/
+body{
+    color:#666666;
+    font-family:Georgia,sans-serif ;
+    font-size:17px;
+    margin:0px;
+} 
+.all{
+    margin:0 auto ;
+    width:96% ;
+    max-width:960px;
+
+    
+}
+img{
+    max-width:100%;
+    height:auto;
+    
+}
+.alignleft{
+    float:left;
+    margin-right:15px;
+    margin-bottom: 15;
+    
+}
+.alignright{
+    float:right;
+    margin-left:15px;
+    margin-bottom: 15;
+    
+}
+.aligncenter{
+    display: block;
+    margin:15px;
+    margin-bottom: 15;
+    
+}
+
+
+
+/*====================================================================
+top header css
+=====================================================================*/
+.frist_header{
+   width:100% ;
+    clear:both;
+}
+#top_header{
+    background:#ba2e1f ;
+    padding:15px 0 ;
+    width:100%;
+    overflow: hidden;
+} 
+
+.frist_menu{
+    float:left;
+    width:70%;
+    margin:5px;
+}
+.frist_menu ul{
+    margin:0px;
+    padding:0px;
+    list-style:none;
+    text-align:left;
+}
+.frist_menu ul li{
+    display: inline-block;
+    margin-right:10px;
+    position:relative ;
+}
+.frist_menu ul li::after{
+    background: #fff;
+    content:"";
+    position:absolute ;
+    top:6px;
+    right:-10px;
+    height:12px;
+    width:1px;
+ 
+}
+.frist_menu ul li:last-child::after{
+    display:none;
+    
+}
+.frist_menu ul li a{
+    color:#ffffff ;
+    font-size:14px;
+    display:block;
+    text-decoration:none;
+}
+.frist_menu ul li a:hover{
+    color:#ddd ;
+}
+.frist_from from {
+    background:#fff;
+    border-radius: 25px;
+    padding:1%;
+    float:right;
+    max-width:210px;
+    width:96%;
+    
+}
+.frist_from input{
+   border:none;
+   width:75%;
+   padding:1px;
+   float:left;
+   color:#000;
+}
+.frist_from input[type="submit"]{
+   background:url(img/search-location-solid.svg);
+   background-repeat: no-repeat;
+   background-position:right;
+   width:24%;
+   cursor: pointer;
+
+} 
+
+/*==========================================================================
+second_menu_and_from
+============================================================================*/
+#bottom_header{
+    overflow: hidden;
+    clear: both;
+    width:100%;
+}
+.logo_and_scial{
+   overflow: hidden;
+   padding:40px 0 ;
+}
+.logo{
+    width:220px;
+    float:left;
+}
+.frist_social{
+    float:right;
+    max-width:600px;
+    width:100%;
+    padding-top:20px;
+    
+}
+.frist_social ul{
+    margin:0px;
+    padding:0px;
+    list-style:none;
+    text-align:right;
+    
+}
+.frist_social ul li{
+    display:inline-block;
+    margin-left:15px;
+    
+}
+.frist_social ul li a i{
+    background:#333333;
+    border-radius:50%;
+    display:block;
+    text-decoration: none;
+    width:35px;
+    padding:8px 0;
+    color:#fff;
+    height:25%;
+    text-align:center;
+    transition: 0.5s;
+}
+.frist_social ul li a:hover i{
+    background: #e67e22;
+}
+/* ===========================================================================================
+  header menu
+==============================================================================================*/
+.heder_menu{
+    width: 100%;
+    clear: both;
+    
+}
+.heder_mene_manu{
+    background: #333333 ;
+    padding: 10px 0 ;
+    border-radius: 5px;
+    z-index: 1;
+    min-height: 34px;
+    
+}
+.heder_mene_manu::after{
+    background: #2b2b2b ;
+    content:"";
+    width:100%;
+    height:50%;
+    bottom: 0px;
+    left:0px;
+    z-index: -1;
+    
+}
+.heder_mene_manu ul{
+    margin:0px;
+    padding:0px;
+    list-style:none;
+    text-align:center;
+}
+.heder_mene_manu ul li{
+    display:inline-block;
+    margin:0;
+    position: relative;
+
+}
+.heder_mene_manu ul li a{
+    color:#fff;
+    text-decoration: none;
+    display:block;
+    padding:5px;
+    transition: 0.5s ;
+}
+.heder_mene_manu ul li a:hover{
+    color:black;
+    
+    
+}
+.heder_mene_manu ul li:hover a{
+    color:red;
+    
+    
+}
+.heder_mene_manu ul li:hover  ul li a{
+    color:#ddd;
+    
+    
+}
+  
+       
+                         /*drobdowm menu*/
+.heder_mene_manu ul ul {
+    
+    background: red ;
+    position:absolute;
+    width:180px;
+    left:-999999px;
+    top:33px;
+    float:left;
+    z-index: 1;
+    
+}
+.heder_mene_manu ul li:hover ul  {
+    
+    left:0px;
+    float:left;
+
+    
+}
+.heder_mene_manu ul li:hover ul ul  {
+    
+
+    left:-999999px;
+    
+}
+
+
+.heder_mene_manu ul ul ul{
+   left:180px;
+    top:0px;
+
+}
+
+.heder_mene_manu ul li ul li:hover ul  {
+    
+
+    left:184px;
+    
+}
+.heder_mene_manu ul ul li{
+    margin:0px;
+    display:block;
+    background: red;
+}
+
+
+.heder_mene_manu ul ul li:hover a{
+  background: black;
+}
+.heder_mene_manu ul ul li:hover ul li a{
+  background: none;
+}
+
+/*========================================================================================
+slider style
+==========================================================================================*/
+
+.slider{
+    margin-top: 20px;
+}
+.item{
+    position: relative;
+}
+.slider_caption{
+    position: absolute;
+    width:100%;
+    text-align:center;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%)
+}
+.slider_caption h1{
+    color:#2c3e50;
+    font-weight: 900;
+    font-size: 45px;
+}
+
+/*========================================================================================
+ hero area
+==========================================================================================*/
+
+
+
+
+
+.hero_area{
+    background: #fff;
+    margin: 0px;
+    padding:0px;
+}
+.bannera_rea{
+    overflow: hidden;
+}
+.bannera_rea img{
+    background: #636e72;
+    width:42%;
+    height: 400px;
+}
+.bannera_rea h2{
+    color:#000000;
+    font-size:86px;
+    font-weight: normal;
+    line-height: 1em;
+    margin-bottom: 188px;
+}
+.bannera_rea p{
+    color:#000000;
+    font-size:16px;
+    font-weight: normal;
+}
+.bannera_rea a{
+    float:right;
+    color:#e55039;
+    text-decoration: none;
+    font-size:16;
+    text-transform: uppercase;
+}
+.bannera_rea a:hover{
+    color:black;
+}
+/*===============================================================================================
+service_araea
+=================================================================================================*/
+
+
+#service_area{
+    padding:60px 0 500px 0 ;
+}
+.inara_work{
+    background:#f2f2f2;
+}
+.some_width{
+    width:48%;
+    float:left;
+
+}
+.some_width h2{
+    color:#666666;
+    font-size:26px;
+    font-weight: normal;
+    display: block;
+    margin-bottom: 15px;
+}
+.some_width p{
+    color:#878787;
+    font-size:14px;
+    font-weight: normal;
+    width: 100%;
+    float: left;
+    margin: 5px;
+}
+.some_width a{
+    color: red;
+    font-weight: normal;
+    text-decoration: none;
+    clear: both;
+    float:right;
+    display:block;
+    display: inline-block;
+    transition: 0.5s;
+}
+.some_width a:hover{
+    color:black;
+}
+.about_area{
+    margin-left:0px;
+}
+.about_area img{
+    width: 65%;
+    border: 2px solid #dfdfdf;
+    padding: 5px;
+}
+.service_area{
+    margin-left: 36px;
+
+}
+.text_area{
+    width:100%;
+    margin-bottom: 15px;
+}
+
+
+
+
+/*===========================================================================================
+footer Area css
+============================================================================================*/
+
+
+
+
+
+#footer_area{
+    background: #fff;
+    padding:45px 0;
+}
+.inner_area{
+    overflow: hidden;
+}
+.frist_footer{
+    padding:1%;
+    margin:0 1% 30px;
+    width:21%;
+    float:left;
+}
+.frist_footer h3{
+    border-top:2px solid black ;
+    color:#666666;
+    font-size:16px;
+    text-transform: uppercase;
+    margin-top:0;
+    padding-top:5px;
+    
+}
+
+.frist_footer h4{
+    color:#666666;
+    font-size:14px;
+    margin-top:0;
+}
+.frist_footer h4 a{
+    color:#666666;
+    text-decoration: none;
+    float:none;
+}.frist_footer h4 a:hover{
+    color: red;
+}
+
+.frist_footer h6{
+    margin:0 0 20px;
+    font-size:12px;
+    font-weight: 1.3em;
+    
+}
+
+
+.frist_footer p{
+    color:#666666;
+    font-size:14px;
+    margin-top:14px;
+}
+
+
+.frist_footer p a{
+    color:#95afc0;
+    text-decoration: none;
+}
+.block{
+    width:100%;
+    overflow:hidden;
+    margin-bottom:20px;
+   
+}
+.block a{
+    color:red;
+    float:right;
+    text-decoration: none;
+    font-size:14px;
+
+}
+.frist_footer p a:hover{
+    background: red;
+}
+.frist_footer ul{
+    margin:0;
+    padding:0;
+    list-style:none;
+
+}
+.frist_footer ul ul{
+        display: none;
+    
+}
+.frist_footer li{
+    display: block;
+    border-bottom:1px solid black;
+}.frist_footer li:last-child{
+    border-bottom:0px solid;
+}
+.frist_footer li a{
+    font-size:14px;
+    text-decoration: none;
+    color:#666666;
+
+}
+.frist_footer li a:hover{
+    color:#95afc0 ;
+
+}
+.frist_footer input{
+ background: #f2f2f2;
+    border:none;
+    border-radius: 5px;
+    padding:15px 2%;
+    margin-bottom:20px;
+    width:96%;
+}
+.frist_footer textarea{
+    background: #f2f2f2;
+    border:none;
+    border-radius: 5px;
+    padding:15px 5%;
+    margin-bottom:20px;
+    width:90%;
+}
+.frist_footer input[type="submit"]{
+    color:red;
+    width:80px;
+    cursor:pointer ;
+    transition: 0.5s;
+}
+
+
+
+.frist_footer input[type="submit"]:hover{
+    background: #f0932b;
+    color:white
+}
+
+
+
+
+
+/*===========================================================================================
+copyright Area css
+============================================================================================*/
+
+
+
+#copyright_area{
+    background: #f2f2f2;
+    padding:20px 0 ;
+}
+.innare_copyright{
+    overflow: hidden;
+}
+.innare_copyright p{
+    margin: 0;
+    color:#919191;
+    font-size:12px;
+}
+.left_area{
+    float:left;
+    width:60%;
+}
+
+.right_area{
+    float:right;
+    width:40%;
+    text-align: right;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
